@@ -3,30 +3,29 @@ import Search from "../../assets/icons/search.svg";
 import Logo from "../../assets/icons/logo.svg";
 import ShoppingCart from "../../assets/icons/shopping-cart.svg";
 import User from "../../assets/icons/user.svg";
-import { ElHeader, ElHeaderFlex, Menu, Navbar } from "./styles";
 
 const Header = () => {
   return (
     <>
-      <ElHeader>
+      <header>
         <a href="/">
           <img src={Search} alt="search" />
         </a>
         <a href="/">
           <img src={Logo} alt="logo" />
         </a>
-        <ElHeaderFlex>
+        <div>
           <a href="/">
             <img src={ShoppingCart} alt="shopping-cart" />
           </a>
           <a href="/">
             <img src={User} alt="user" />
           </a>
-        </ElHeaderFlex>
-      </ElHeader>
+        </div>
+      </header>
 
-      <Navbar>
-        <Menu>
+      <nav>
+        <ul>
           <li>
             <a href="/">Plant pots</a>
           </li>
@@ -48,8 +47,8 @@ const Header = () => {
           <li>
             <a href="/">Cutlery</a>
           </li>
-        </Menu>
-      </Navbar>
+        </ul>
+      </nav>
     </>
   );
 };
