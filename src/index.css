@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: Satoshi-Light;
+  src: url(./Fonts/Satoshi-Light.woff2) format(woff2),
+    url(./Fonts/Satoshi-Light.woff) format(woff);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: Satoshi-Regular;
+  src: url(./Fonts/Satoshi-Regular.woff2) format(woff2),
+    url(./Fonts/Satoshi-Regular.woff) format(woff);
+}
+
+@font-face {
+  font-family: Satoshi-Medium;
+  src: url(./Fonts/Satoshi-Medium.woff2) format(woff2),
+    url(./Fonts/Satoshi-Medium.woff) format(woff);
+}
+
+@font-face {
+  font-family: Satoshi-Bold;
+  src: url(./Fonts/Satoshi-Bold.woff2) format(woff2),
+    url(./Fonts/Satoshi-Bold.woff) format(woff);
+}
+
+@font-face {
+  font-family: Satoshi-Black;
+  src: url(./Fonts/Satoshi-Black.woff2) format(woff2),
+    url(./Fonts/Satoshi-Black.woff) format(woff);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Satoshi-Regular;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
